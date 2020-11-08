@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <npcs>
+    <npc npc_id="0" name="Herald">
+        
+      <conversation conversation_id="0">
+
+     
+        <dialogue state_id= "1">
+          <text>Anything i can help you with</text>
+        </dialogue>
+
+        <dialogue state_id="2">
+          <text>I heard a rumour that Alex paying coin for something, don't know what tho</text>
+        </dialogue>
+
+        <dialogue state_id="3">
+          <text>Certantly ... here have a look</text>
+        </dialogue>
+
+        <dialogue state_id="4">
+          <text>He lives out of town, the old mannor on the hill to the north. you can't miss it</text>
+        </dialogue>
+
+        <dialogue state_id="5">
+          <text>Queer man ummmmm let me think...</text>
+          <text>ahhh! He moved here from Yonvik with his wife and daughter. To start a new i think.</text>
+          <text>Alas his misses rather missed city life and left with the daughter. I don't know anything else, </text>
+          <text>keeps to himself.</text>
+        </dialogue>
+
+      </conversation>
+    
+    </npc>
+
+
+</npcs>

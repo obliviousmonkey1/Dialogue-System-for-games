@@ -1,0 +1,45 @@
+{ "0":{	
+	"0":{
+
+		"1":{
+
+		"type" : "response",
+		"text1": ["Any news?", "2"],
+		"text2": ["What you selling.", "3"],
+		"text3": ["No, thank you. [EXIT]", "FALSE"]
+
+		},
+
+		"2":{
+
+		"type" : "response",
+		"text1":["Where might i find him", "4"],
+		"text2":["Actually can i look at your wares", "3"],
+		"text3":["Could you tell me anything about him", "5"],
+		"text4":["I'm fine [EXIT]", "FALSE"]
+
+		},
+
+		"3":{
+
+			"type" : "store",
+			"store_id" : "3"
+
+			},
+
+			"4":{
+
+			"type" : "response",
+			"text1" : ["Could you tell me anything about him", "5"],
+			"text2" : ["Thank you [EXIT]", "FALSE"]
+
+			},
+
+			"5":{
+
+			"type" : "FALSE"
+
+			}
+		}
+	}
+}
