@@ -1,6 +1,8 @@
 import json
 import xml.etree.ElementTree as ET
 
+## npc id states are for testing ##
+
 npc_current_id = "0"
 npc_current_conversation_id = "0"
 npc_current_state_id = "1"
