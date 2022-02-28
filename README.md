@@ -1,5 +1,5 @@
 # Dialogue-System-for-games
-| NOT COMPLETE |
+| NOT COMPLETE STARTED WHEN I WAS 10|
 
 Both the xml and json files use a npc id and a conversation id, which mean that conversations that previously happend can be accounted for and based on different
 situations the dialogue output can be dynamically changed:
