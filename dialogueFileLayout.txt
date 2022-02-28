@@ -1,0 +1,43 @@
+ what we need:
+ -> To be able to know which nodes are connected to which response
+ -> To be able to take in tags and requirments
+ -> To know were in the tree to put this information 
+ 
+
+Top of the document is the root of the tree
+ 
+ 
+                        [id] Name <- specifying the type i.e dialogue or response or root
+
+[0, conditon, text, children[id]] Dialogue 
+[1, conditon, text, children[id]] Dialogue
+
+                        [id] Response's
+
+[0, conditon, text, children[id]] Response
+
+                            Graph
+
+Diaogue will choose the response based upon what skill, class archatype the player uses the most 
+out of all the conditions that are their.
+
+                                root [conditon childen[id]] 
+                                 |
+                                 |
+                             dialogues <- contain a set of dialogues, based on conditions
+                                 |
+                               __|__
+                              |     |
+                      response's   response's
+
+Could also be more than one dialogue set, a base and then one that meets the conditon 
+Could be used for quests in order to remind the player of what they are doing or 
+having some specific dialogue related to them returning and not having done it.
+Within graphs should also be the ablity to call of graphs
+
+Shopkeeper MAIN Graph         Shopkeeper QUEST1 graph
+
+If you havent done the quest yet but want to use their wares and items you can 
+reference the main graph and maybe a sub tree in it inorder to get the dialogue Options
+for wares without having to re-write it. It will then go back to the point it left 
+of in QUEST1 graph and terminate or whatever 

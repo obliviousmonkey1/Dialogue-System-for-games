@@ -1,0 +1,58 @@
+Conversation Features
+Here are some of the high-level features of the NWN dialog system.
+
+Conversation is a separate game state.
+Conversation pauses the game world.
+The NPC's speech is rendered as text.
+The player is presented with a choice of replies.
+Some replies may be hidden depending on certain conditions.
+Choosing a reply may alter the game's state.
+Conversations can contain loops.
+To exit the conversation the player must choose a special reply that may not always be available.
+
+A reply being available may depend on several factors; the class of the player, 
+the previous choices in a conversation, player intelligence or charisma, how far the player has proceeded
+ in a certain quest and so on.
+
+ Graph to represent conversations 
+
+http://howtomakeanrpg.com/a/rpg-conversation-never-winter-nights.html
+ A diagram showing the structure of Never Winter Nights dialog tree.
+
+                                           --> reply node 1 --> dialogue node  1a
+Condition requirment ---> dialogue node 1  
+                                           --> reply node 2 --> dialogue node  1b
+
+Two types of nodes : dialogue ,and response. Response nodes may only be children of
+dialogue nodes . Dialogue nodes can be childs of other dialogue nodes
+
+Dialogue node is evaluated , when its shown it's displayed in the "NPC dialogue panel",
+it's children are then evaluated in order and put into the "response pannel"
+If the children or child are dialogue nodes then , press space to continue prompt is
+put onto the screen 
+
+Options :
+-> Have the conversation automatically carry on when the talker finishes talking 
+-> Have the player actively have to press space to continue the conversation 
+            
+If a node contains an exit tag then when the dialogue ends the conversation will end 
+
+-> If multiple dialogue nodes could use a queue in order to process and show them in order 
+
+Graph:
+
+Node types -> root, dialogue and response
+
+for all:
+    type : str
+    conditon : str or pointer to something 
+    children : list[]
+
+dialogue/ response:
+    text 
+
+dialogue:
+    audio 
+
+Can be other special condtions such as Exit
+  
